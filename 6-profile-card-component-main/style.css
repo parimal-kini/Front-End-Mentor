@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+  font-size: 18px;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(6, 119, 142, 0.767);
+  background-image: url(images/bg-pattern-top.svg),
+    url(images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: 130% 140%, -25% -50%;
+  position: relative;
+}
+
+.card {
+  background-image: url(/images/bg-pattern-card.svg);
+  background-repeat: no-repeat;
+  background-color: white;
+  width: 330px;
+  height: 400px;
+  margin-top: 5rem;
+  border-radius: 0.75rem;
+}
+
+.icon-img {
+  border-radius: 50%;
+  border: solid 4px white;
+  margin: 5rem 5rem 0.5rem 6rem;
+}
+
+.person-details h3,
+h5 {
+  text-align: center;
+}
+.person-details span,
+h5 {
+  color: var(--dark-gray);
+  padding: 0.5rem;
+}
+
+.person-details::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100%;
+  background: gainsboro;
+  margin-top: 1rem;
+}
+
+.person-stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 1.5rem;
+}
+.person-stats p {
+  font-size: 12px;
+  color: var(--dark-gray);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    /* color: hsl(228, 45%, 44%); */
+    color: aliceblue;
+  }
+
+@media (min-width: 900px) {
+  body {
+    background-position: top 140% left -80%, bottom 150% right -80%;
+  }
+}
