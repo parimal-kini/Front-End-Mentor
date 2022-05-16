@@ -68,10 +68,11 @@ h5 {
   display: flex;
   justify-content: space-around;
   padding: 1.5rem;
+  text-align: center;
 }
 .person-stats p {
   font-size: 12px;
-  color: var(--dark-gray);
+  color: var(--dark-gray);  
 }
 
 .attribution {
