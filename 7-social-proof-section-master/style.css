@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+*,
+*::before,
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: League Spartan;
+}
+
+:root{
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+    font-size: 15px;
+}
+
+main{
+    display: grid;
+    place-content: center;
+}
+
+.header{
+    margin: 3rem 3rem;
+    text-align: center;
+}
+.header h1{
+    font-size: 2.5rem;
+    color: var(--very-dark-magenta);
+}
+.header p{
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+    line-height: 1.5rem;
+    color: var(--dark-grayish-magenta);
+}
+
+.review{
+    background: var(--light-grayish-magenta);
+    padding: 1rem;
+    margin: 0 4rem 1rem 4rem;
+    width: 290px;
+    border-radius: .5rem;
+    color: var(--very-dark-magenta);
+    text-align: center;
+}
+.review h3{
+    display: block;
+    margin-top: 1.5rem;
+}
+
+.customer{
+    width: 290px;
+    margin: 1rem 4rem 1rem 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: var(--very-dark-magenta);
+    border-radius: .5rem;
+}
+.customer img{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border-radius: 50%;
+    width: 50%;
+    margin: 1.5rem;
+}
+.details {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    color: var(--light-grayish-magenta);
+    padding-top: 2rem;
+}
+.details p{
+    color: var(--soft-pink);
+    padding-top: .5rem;
+}
+.text{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    color: var(--light-grayish-magenta);
+    line-height: 1.5rem;
+    padding: 0 1rem 2rem 1rem ;
+}
+.one{
+    margin-top: 3rem;
+}
+.three{
+    margin-bottom: 1rem;
+}
+
+.attribution {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+@media (min-width: 700px){
+    main{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .header{
+        text-align: left;
+        width: 500px;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        margin: 5rem 6rem 2rem 10rem;
+    }
+    .header h1{
+        font-size: 4rem;
+    }
+    .header p{
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .reviews{
+        grid-column-start: 2;
+        grid-column-end: 4; 
+        width: 400px; 
+        margin: 4rem 13rem 2rem -4rem;
+    }
+    .review{
+        display: flex;
+        width: 450px;
+    }
+    .review img{
+        width: 5%;
+        height: 5%;
+        padding: .25rem;
+    }
+    .review h3{
+        margin: .5rem 0 1rem 2rem;
+    }
+    .r-two{
+        margin-left: 7rem;
+    }
+    .r-three{
+        margin-left: 11rem;
+    }
+
+    .customer-feedback{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        display: flex;
+        flex-direction: row;
+        margin: 1rem 1rem .5rem 6rem;
+    }
+    .customer{
+        width: 350px;
+        height: 250px;
+    }
+    .c-two{
+        margin: 4rem 1rem 0 -1rem;
+    }
+    .c-three{
+        margin: 5.5rem 1rem 0 2rem;
+    }
+}
