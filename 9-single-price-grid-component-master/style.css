@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* ### Primary */
+    --Cyan: hsl(179, 62%, 43%);
+    --Light-Cyan: hsl(179, 44%, 55%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    /* ### Neutral */
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+    /* ### Body Copy */
+    font-family: Karla;
+    font-size: 16px;
+}
+
+html, body{
+    background-color: var(--Light-Gray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    overflow-x: hidden;
+    /* max-height: 100%;
+    overflow-y: hidden; */
+}
+
+h3 {
+    margin: 1rem 0rem;
+    font-weight: 700;
+}
+
+p {
+    line-height: 1.5em;
+    font-weight: 400;
+    margin-bottom: .75rem;
+}
+
+button{
+    background-color: var(--Bright-Yellow);
+    border: none;
+    padding: .75rem 5.5rem;
+    border-radius: .25rem;
+    color: var(--Light-Gray);
+    margin: 1rem 0rem .85rem 0rem;
+    font-weight: 700;
+    box-shadow:0 1px 4px rgba(91, 91, 91, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.card {
+    max-width: 310px;
+    padding: .5rem 2.5rem;
+    color: var(--Light-Gray);
+}
+
+.one{
+    background-color: white;
+    color: rgb(143, 143, 143);
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    margin-top: 3rem;
+
+}
+.one h3{
+    color: var(--Cyan);
+}
+.one h4{
+    color: var(--Bright-Yellow);
+    margin-bottom: 1rem;
+}
+
+.two{
+    background-color: var(--Cyan);
+}
+.two p span{
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-right: .5rem;
+}
+.pricing{
+    margin-bottom: 0.5rem;
+}
+.test{
+    width: 310rem;
+    font-size: .95rem;
+}
+
+.three{
+    background-color: var(--Light-Cyan);
+    border-bottom-left-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+}
+
+footer{
+    margin: 3rem;
+}
+
+@media (min-width: 850px){
+    body{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 3rem 0px;
+        padding: 0;
+    }
+
+    .one{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        max-width: 620px;
+        padding: 2.5rem 1.5rem;
+    }
+
+    .two{
+        padding: .98rem;
+        border-bottom-left-radius: .25rem;
+    }
+
+    .three{
+        border-bottom-left-radius: 0;
+    }
+
+    footer{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
