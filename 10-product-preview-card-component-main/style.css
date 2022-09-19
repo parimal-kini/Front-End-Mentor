@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* ### Primary */
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+
+    /* ### Neutral */
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+    font-size: 14px;
+}
+
+body{
+    background-color: var(--Cream);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+p{
+    color: var(--Dark-grayish-blue);
+    font-family: Montserrat;
+    font-weight: 500;
+    margin: 1rem 0;
+    line-height: 1.75;
+}
+
+h1{
+    display: inline-block;
+    font-family: Fraunces;
+    font-weight: 700;
+}
+
+main{
+    background: var(--White);
+    max-width: 350px;
+    margin-top: 8rem;
+    border-radius: .75rem;
+}
+
+button{
+    display: block;
+    padding: 1rem 7rem;
+    font-weight: 700;
+    background: var(--Dark-cyan);
+    color: var(--White);
+    border: none;
+    border-radius: .5rem;
+    margin: 1rem auto 0 auto;
+}
+.cart-svg{
+    margin-right: 1rem;
+}
+
+.product{
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+}
+
+.img-div img{
+    width: 350px;
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+}
+
+.container{
+    margin: 1.5rem;
+}
+
+.price{
+    color: var(--Dark-cyan);
+    margin-right: 1rem;
+}
+
+s{
+    display: inline;
+    color: var(--Dark-grayish-blue);
+    padding-bottom: 1rem;
+}
+
+footer{
+    margin: 2rem;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media(min-width : 750px){
+    main{
+        max-width: 700px;
+        height: 525px;
+        display: flex;
+    }
+
+    p{
+        line-height: 1.75;
+        margin: 1.75rem 0;
+    }
+
+    button{
+        padding: 1rem 6rem;
+        margin-top: 2rem;
+    }
+
+    .one img{
+        border-radius: .75rem 0 0 .75rem;
+    }
+
+    .desp-div{
+        max-width: 220px;
+    }
+
+    .flex-two{
+        padding: 1.5rem 1rem;
+    }
+}
