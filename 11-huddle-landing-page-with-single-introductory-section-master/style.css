@@ -21,11 +21,13 @@ body {
     color: white;
     font-family: Open Sans;
     padding: 1rem;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .container {
     max-width: 300px;
+    margin: auto;
+    /* padding: auto; */
     /* border: solid 1px yellow; */
 }
 
@@ -43,7 +45,7 @@ body {
 
 .description {
     text-align: center;
-    margin: .5rem 0;
+    /* margin: .5rem 0; */
     /* border: solid 1px red; */
 }
 
